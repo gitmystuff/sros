@@ -186,7 +186,11 @@ def main():
                     help='ROS 2 node name (default: blue_qcar2_node)')
     args = ap.parse_args()
 
-    rclpy.init()
+    # Pass enclave path so SROS2 can find the correct security files.
+    # The enclave must match the directory created by:
+    #   ros2 security create_key ~/sros2_keystore /blue_qcar2_node
+    # When ROS_SECURITY_ENABLE=false (default), this argument is ignored.
+    rclpy.init(args=['--ros-args', '--enclave', f'/{args.name}'])
     node = BlueVictim(args.name)
     try:
         rclpy.spin(node)
