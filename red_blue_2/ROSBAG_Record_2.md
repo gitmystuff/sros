@@ -12,8 +12,8 @@ ip addr show
 
 ## Step 2 — Open terminals
 
-**Blue machine — open 3 terminals**
-**Red machine — open 1 terminal**
+* **Blue machine — open 3 terminals**
+* **Red machine — open 1 terminal**
 
 ---
 
