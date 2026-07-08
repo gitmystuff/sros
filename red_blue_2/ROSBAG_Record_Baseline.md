@@ -17,7 +17,7 @@ ip addr show
 
 ---
 
-## Step 3 — Source ROS 2 on both machines
+## Step 3 — Source ROS 2 on both machines if needed
 
 Run this in **every terminal** on both machines:
 ```bash
