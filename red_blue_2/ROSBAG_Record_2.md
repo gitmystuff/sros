@@ -60,7 +60,7 @@ Expected:
 /rosout
 ```
 
-**If you only see `/parameter_events` and `/rosout` — stop here and tell me.**
+**Stop if you only see `/parameter_events` and `/rosout`**
 
 ---
 
