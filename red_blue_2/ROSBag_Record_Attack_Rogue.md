@@ -86,3 +86,42 @@ ros2 bag info ~/bags/attack_rogue_001
 ```
 
 You should now see `/qcar2/cmd_vel` in the topic list with approximately 100 messages — those are the injected commands captured in the bag.
+
+Here's the metadata label for the rogue attack. Run this on the **blue machine**:
+
+```bash
+cat > ~/bags/attack_rogue_001/metadata.json << 'EOF'
+{
+  "label": "cmd_vel_spoofing",
+  "description": "Rogue node injecting throttle=0.1 steering=0.3 at 10 Hz for 10 seconds",
+  "duration_seconds": 30,
+  "attack_start_offset_seconds": 10,
+  "attack_duration_seconds": 10,
+  "packets_injected": 99,
+  "throttle": 0.1,
+  "steering": 0.3,
+  "rate_hz": 10,
+  "machine": "blue_victim_simulated",
+  "ros_domain_id": 0,
+  "date": "2026-07-08",
+  "attack_scripts": ["rogue_node.py --throttle 0.1 --steering 0.3 --duration 10"]
+}
+EOF
+```
+
+Verify it saved correctly:
+```bash
+cat ~/bags/attack_rogue_001/metadata.json
+```
+
+Then check your bags directory has everything so far:
+```bash
+ls ~/bags/
+```
+
+You should see:
+```
+normal_run_001/
+attack_rogue_001/
+attack_sniffer_001/
+```
