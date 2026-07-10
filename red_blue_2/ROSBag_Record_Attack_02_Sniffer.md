@@ -88,7 +88,7 @@ After 30 seconds you will see:
 
 ---
 
-### Blue Machine — Terminal 1 (operator stream)
+### Blue Machine — Terminal 2 (operator stream)
 Stop the operator drive commands:
 ```
 Ctrl+C
