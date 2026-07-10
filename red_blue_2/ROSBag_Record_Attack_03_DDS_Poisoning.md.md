@@ -38,8 +38,11 @@ Let the recording capture 10 seconds of normal behavior before the attack starts
 
 ### Red Machine — Terminal 1
 Launch the ghost injection — needs sudo for raw sockets:
+
+Note: sudo may not be needed
+
 ```bash
-sudo python3 ~/Documents/sros/dds_ghost.py --count 30 --interval 0.1
+sudo python3 ~/Documents/sros/dds_ghost.py --count 30 --interval 0.1 
 ```
 
 You will see:
