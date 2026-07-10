@@ -2,7 +2,7 @@
 
 **What you need open:**
 - Blue machine: 3 terminals
-- Red machine: 1 terminal
+- Red machine: 2 terminals
 
 ---
 
