@@ -1,7 +1,7 @@
 ## Rosbag Recording — Attack 2: Plaintext Packet Sniffing
 
 **What you need open:**
-- Blue machine: 2 terminals
+- Blue machine: 3 terminals
 - Red machine: 1 terminal
 
 ---
@@ -36,8 +36,8 @@ Let the recording capture 10 seconds of normal behavior before the attack starts
 
 ---
 
-### Blue Machine — Terminal 1
-In a **new tab** on the blue machine, start publishing operator drive commands to give the sniffer something to capture:
+### Blue Machine — Terminal 3
+In **terminal 3** on the blue machine, start publishing operator drive commands to give the sniffer something to capture:
 ```bash
 ros2 topic pub /qcar2/cmd_vel geometry_msgs/msg/Twist \
   '{linear: {x: 0.1}, angular: {z: 0.2}}' --rate 10
