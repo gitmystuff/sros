@@ -1,0 +1,15 @@
+{
+  "label": "cmd_vel_spoofing",
+  "description": "Rogue node injecting throttle=0.1 steering=0.3 at 10 Hz for 10 seconds",
+  "duration_seconds": 30,
+  "attack_start_offset_seconds": 10,
+  "attack_duration_seconds": 10,
+  "packets_injected": 99,
+  "throttle": 0.1,
+  "steering": 0.3,
+  "rate_hz": 10,
+  "machine": "blue_victim_simulated",
+  "ros_domain_id": 0,
+  "date": "2026-07-08",
+  "attack_scripts": ["rogue_node.py --throttle 0.1 --steering 0.3 --duration 10"]
+}

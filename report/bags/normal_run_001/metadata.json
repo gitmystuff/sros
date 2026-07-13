@@ -1,0 +1,9 @@
+{
+  "label": "normal",
+  "description": "Normal operation, no attack active",
+  "duration_seconds": 53,
+  "machine": "blue_victim_simulated",
+  "ros_domain_id": 0,
+  "date": "2026-07-08",
+  "attack_scripts": []
+}

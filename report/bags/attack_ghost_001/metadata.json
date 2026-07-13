@@ -1,0 +1,14 @@
+{
+  "label": "dds_discovery_poisoning",
+  "description": "30 ghost SPDP participants injected at 0.1s intervals via raw UDP multicast",
+  "duration_seconds": 33,
+  "attack_start_offset_seconds": 10,
+  "attack_duration_seconds": 3,
+  "ghost_count": 30,
+  "ghost_interval_seconds": 0.1,
+  "target_multicast": "239.255.0.1:7400",
+  "machine": "blue_victim_simulated",
+  "ros_domain_id": 0,
+  "date": "2026-07-08",
+  "attack_scripts": ["dds_ghost.py --count 30 --interval 0.1"]
+}

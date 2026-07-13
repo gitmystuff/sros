@@ -1,0 +1,12 @@
+{
+  "label": "plaintext_sniffing",
+  "description": "Passive sniffer captured cmd_vel, IMU, battery from raw UDP",
+  "duration_seconds": 50,
+  "attack_start_offset_seconds": 10,
+  "attack_duration_seconds": 30,
+  "machine": "blue_victim_simulated",
+  "ros_domain_id": 0,
+  "date": "2026-07-08",
+  "attack_scripts": ["sniffer.py --verbose"],
+  "note": "Sniffer is passive — no packets injected. Bag captures what attacker decoded."
+}

@@ -1,0 +1,18 @@
+{
+  "label": "command_flooding",
+  "description": "cmd_vel flooded at 1000 Hz for 10 seconds alongside legitimate 10 Hz operator stream",
+  "duration_seconds": 35,
+  "attack_start_offset_seconds": 15,
+  "attack_duration_seconds": 10,
+  "flood_rate_hz": 1000,
+  "legitimate_rate_hz": 10,
+  "flood_throttle": 0.0,
+  "packets_sent": 10000,
+  "machine": "blue_victim_simulated",
+  "ros_domain_id": 0,
+  "date": "2026-07-08",
+  "attack_scripts": [
+    "ros2 topic pub /qcar2/cmd_vel --rate 10 (legitimate)",
+    "cmd_flood.py --rate 1000 --duration 10 (flood)"
+  ]
+}
