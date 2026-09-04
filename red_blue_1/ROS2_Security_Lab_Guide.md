@@ -195,7 +195,6 @@ Leave this running. You will see injected commands appear here.
 ```bash
 ros2 topic info /qcar2/cmd_vel --verbose
 ```
-Note: currently 1 publisher (blue machine itself).
 
 **Step 3** — On the **red machine**, launch the rogue node:
 ```bash
